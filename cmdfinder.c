@@ -38,7 +38,7 @@ free(path_env);
 free(path_envcpy);
 if (stat(cmd, &buff) == 0)
 {
-return (cmd);
+return (_strdup(cmd));
 }
 else
 {

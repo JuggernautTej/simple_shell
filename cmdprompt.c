@@ -19,15 +19,14 @@ if (in == -1)
 {
 if (in == EOF)
 {
-_printstrg("\n");
 free(s_buf);
-exit(1);
+exit(EXIT_SUCCESS);
 }
 else
 {
 perror("Error reading input");
 free(s_buf);
-exit(1);
+exit(EXIT_FAILURE);
 }
 }
 if (s_buf[in - 1] == '\n')

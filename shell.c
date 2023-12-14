@@ -25,5 +25,5 @@ exec_cmd(s_array);
 }
 free(s_input);
 }
-return (0);
+return (EXIT_SUCCESS);
 }

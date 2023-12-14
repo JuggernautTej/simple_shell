@@ -12,7 +12,7 @@ char *args = strtok(cmd, " \n");
 args = strtok(NULL, " \n");
 if (args != NULL)
 {
-cachet = atoi(args);
+cachet = _atoi(args);
 }
 return (cachet);
 }
@@ -31,5 +31,5 @@ cachet = exit_handler(cmd);
 free(cmd);
 exit(cachet);
 }
-return (0);
+return (EXIT_SUCCESS);
 }

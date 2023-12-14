@@ -9,7 +9,7 @@ int _printstrg(char *strg)
 {
 int a;
 if (strg == NULL)
-exit(1);
+exit(EXIT_SUCCESS);
 a = write(STDOUT_FILENO, strg, _strlen(strg));
 if (a == -1)
 {

@@ -36,6 +36,7 @@ child_pid = fork();
 if (child_pid == -1)
 {
 perror("Error with forking");
+free(full_cmd);
 free_dog(command);
 exit(EXIT_FAILURE);
 }
@@ -50,7 +51,7 @@ exit(EXIT_FAILURE);
 else
 {
 wait(&status);
-}
 free(full_cmd);
 free_dog(command);
+}
 }
