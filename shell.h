@@ -26,6 +26,7 @@ char *_strcat(char *dest, char *src);
 int _strncmp(char *s1, char *s2, size_t x);
 int _atoi(char *strg);
 void check_cmd(char *cmd);
+unsigned int _strspn(char *s, char *accept);
 
 extern char **environ;
 #endif

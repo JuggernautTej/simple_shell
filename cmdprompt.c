@@ -33,5 +33,10 @@ if (s_buf[in - 1] == '\n')
 {
 s_buf[in - 1] = '\0';
 }
+if (s_buf[0] != '\0' && _strspn(s_buf, " \t,\n\r\f\v") == strlen(s_buf))
+{
+free(s_buf);
+exit(EXIT_SUCCESS);
+}
 return (s_buf);
 }
